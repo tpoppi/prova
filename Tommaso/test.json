@@ -1,0 +1,31 @@
+{
+    "data": {
+        "GetAllFiles": [
+            {
+                "nome": ".gitignore",
+                "Dimensione": 14,
+                "DataUltimaModifica": "2021-02-17 06:45:01"
+            },
+            {
+                "nome": "ciao.txt",
+                "Dimensione": 22,
+                "DataUltimaModifica": "2021-02-26 05:03:16"
+            },
+            {
+                "nome": "ciao\\dentro.txt",
+                "Dimensione": 0,
+                "DataUltimaModifica": "2021-02-25 06:18:32"
+            },
+            {
+                "nome": "ciao\\hey.txt",
+                "Dimensione": 0,
+                "DataUltimaModifica": "2022-02-25 06:20:25"
+            },
+            {
+                "nome": "ciao\\file.txt",
+                "Dimensione": 0,
+                "DataUltimaModifica": "2022-02-25 06:20:25"
+            }
+        ]
+    }
+}
