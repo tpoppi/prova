@@ -6,8 +6,13 @@
     },
     {
         "nome": "ciao.txt",
-        "Dimensione": 22,
-        "DataUltimaModifica": "2021-02-26 05:03:16"
+        "Dimensione": 26,
+        "DataUltimaModifica": "2021-02-26 06:10:20"
+    },
+    {
+        "nome": "hola.txt",
+        "Dimensione": 7,
+        "DataUltimaModifica": "2021-02-26 06:09:09"
     },
     {
         "nome": "ciao\\dentro.txt",

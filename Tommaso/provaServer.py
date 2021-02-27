@@ -15,5 +15,5 @@ query {
 }
 """)
 
-risultato = client.execute(query)
-print(risultato["GetAllFiles"])
+risultato = client.execute(query)["GetAllFiles"]
+print(risultato)
