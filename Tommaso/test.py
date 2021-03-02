@@ -77,7 +77,7 @@ class metaData:
         """metadata dei file nel server"""
         self.metaServer = self.getDataServer()
 
-    def getDataServer(self):
+    def getDataServer(self) -> None:
         server = Server()
         return server.getAllFiles()
 
@@ -107,6 +107,7 @@ class metaData:
             nome = i["nome"]
             ultimaModifica= i["DataUltimaModifica"]
             trovato = False
+            ciao=True
             for y in self.metaServer:
                 if i["nome"] == y["nome"]:
                     trovato = True
