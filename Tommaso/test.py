@@ -63,7 +63,7 @@ class Policy(Enum):
 class metaData:
     def __init__(self):
         # file che son nel client e non sono nel server
-        self.newFilesClient = []
+        self.newFilesClient:list[str,str] = []
         # file che son nel server e non sono nel client
         self.newFilesServer = []
         # file nel client che sono più aggiornati rispetto a quelli nel server
@@ -77,14 +77,13 @@ class metaData:
         """metadata dei file nel server"""
         self.metaServer = self.getDataServer()
 
-    def getDataServer(self):
+    def getDataServer(self) -> None:
         server = Server()
         return server.getAllFiles()
 
     def updateDiff(self):
         # controllo che tutti i file del server siano uguali a quelli del client
         for i in self.metaServer:
-            nome = i["nome"]
             ultimaModifica = i["DataUltimaModifica"]
             trovato = False
             for y in self.metaClientclient:
@@ -107,6 +106,7 @@ class metaData:
             nome = i["nome"]
             ultimaModifica= i["DataUltimaModifica"]
             trovato = False
+            ciao=True
             for y in self.metaServer:
                 if i["nome"] == y["nome"]:
                     trovato = True
