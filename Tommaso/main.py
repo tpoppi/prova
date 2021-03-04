@@ -12,7 +12,10 @@ def metadata(file: str, nome: str):
         'Dimensione': size,
         'DataUltimaModifica': ultima_modifica
     }
-    return data
+    if size > 20:
+        return data
+    else:
+        return None
 
 
 def json_cartella(dir: str):
