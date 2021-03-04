@@ -27,6 +27,8 @@ def json_cartella(dir: str):
             else:
                 p.append(f"{root}\\{name}")
     data = []
+    data.append(["file.txt","non la so"])
+    data.append(["prova.py","2029"])
     for file in p:
         data.append(metadata(file, file.replace(dir, "")))
     with open("file.json", "w") as outfile:
