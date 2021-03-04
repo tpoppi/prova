@@ -31,8 +31,8 @@ def json_cartella(dir: str):
     data.append(["prova.py","2029"])
     for file in p:
         data.append(metadata(file, file.replace(dir, "")))
-    with open("file.json", "w") as outfile:
-        json.dump(data, outfile, indent=4)
+    #with open("file.json", "w") as outfile:
+    #    json.dump(data, outfile, indent=4)
 
 
 path = "..\\sim_storage\\LOCAL\\"
@@ -42,3 +42,4 @@ data = json.load(open("file.json"))
 print(data["ciao.txt"]["DataUltimaModifica"])
 
 """
+print("fine dell'algoritmo!")
