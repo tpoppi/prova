@@ -12,10 +12,8 @@ def metadata(file: str, nome: str):
         'Dimensione': size,
         'DataUltimaModifica': ultima_modifica
     }
-    if size > 20:
-        return data
-    else:
-        return None
+    return data
+
 
 
 def json_cartella(dir: str):
@@ -27,6 +25,11 @@ def json_cartella(dir: str):
             else:
                 p.append(f"{root}\\{name}")
     data = []
+    if data.__len__() == 0:
+        print("è vuoto PROCEDERE!")
+    else:
+        print("SVUOTARE la lista")
+        data.clear()
     for file in p:
         data.append(metadata(file, file.replace(dir, "")))
     with open("file.json", "w") as outfile:
